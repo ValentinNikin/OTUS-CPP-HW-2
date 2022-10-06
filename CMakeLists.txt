@@ -3,11 +3,11 @@ cmake_minimum_required(VERSION 3.2)
 set(EXECUTABLE_NAME ip_filter)
 
 set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
-set(PROJECT_VESRION 0.0.${PATCH_VERSION})
+set(PROJECT_VERSION 0.0.${PATCH_VERSION})
 
 option(ENABLED_TESTING ON)
 
-project(otus-cpp-hw-2 VERSION ${PROJECT_VESRION})
+project(otus-cpp-hw-2 VERSION ${PROJECT_VERSION})
 
 configure_file(
     ${PROJECT_SOURCE_DIR}/version.h.in 
