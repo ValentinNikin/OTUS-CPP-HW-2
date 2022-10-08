@@ -15,7 +15,12 @@ configure_file(
 
 add_executable(
     ${EXECUTABLE_NAME}
-    ${PROJECT_SOURCE_DIR}/src/main.cpp)
+    ${PROJECT_SOURCE_DIR}/src/main.cpp
+    ${PROJECT_SOURCE_DIR}/src/utils.h
+    ${PROJECT_SOURCE_DIR}/src/utils.cpp
+    ${PROJECT_SOURCE_DIR}/src/ip.h
+    ${PROJECT_SOURCE_DIR}/src/ip.cpp
+    )
 
 set_target_properties(
     ${EXECUTABLE_NAME} PROPERTIES
