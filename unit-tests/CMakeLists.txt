@@ -8,7 +8,9 @@ set(UNIT_TEST_EXECUTABLE_NAME unit_tests)
 
 add_executable(
     ${UNIT_TEST_EXECUTABLE_NAME}
-    ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
+    ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/unit-test-ip.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/unit-test-utils.cpp)
 
 target_include_directories(
     ${UNIT_TEST_EXECUTABLE_NAME} 
@@ -19,6 +21,7 @@ target_include_directories(
 target_link_libraries(
     ${UNIT_TEST_EXECUTABLE_NAME} 
     PRIVATE
+    ${MAIN_LIBRARY_NAME}
     ${GTEST_BOTH_LIBRARIES}
     ${CMAKE_THREAD_LIBS_INIT})
 
